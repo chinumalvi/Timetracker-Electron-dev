@@ -1,11 +1,8 @@
 import { Flex, Tabs } from "@chakra-ui/react"
 import DatePickerTop from "../ReusableItems/DatePicker"
-import DashboardTabs from "./DashboardTabs"
-
+// import DashboardTabs from "./DashboardTabs"
+import DashboardPageSec from "./DashboardPageSec"
 function MainContentRight() {
-// const App = () => <DatePicker />;
-// Current date object
-  // const today = new Date();
   return (
     <>
     {/* Top Controls */}
@@ -29,7 +26,7 @@ function MainContentRight() {
         </div>
       </Flex>
       <div>
-        <DashboardTabs/>
+        <DashboardPageSec/>
       </div>
     </>
     
