@@ -83,11 +83,12 @@ function DashboardTabBox() {
 
       <Flex align="stretch">
         <div style={{width:'50%'}}>
-          <ProductiveActivity/>
-        </div>
-        <div style={{width:'50%'}}>
         <ProductivitySplit/>
         </div>
+        <div style={{width:'50%'}}>
+          <ProductiveActivity/>
+        </div>
+        
       </Flex>
       <div>
         <WorkTimeMetrics/>
@@ -98,9 +99,9 @@ function DashboardTabBox() {
       <div>
         <AwayTimeSystemReport/>
       </div>
-      <div>
+      {/* <div>
         <AwayTimeReport/>
-      </div>
+      </div> */}
     </>
   );
 }

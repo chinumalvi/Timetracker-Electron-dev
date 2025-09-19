@@ -1,15 +1,26 @@
-import { Card } from "@chakra-ui/react"
+import { Card, Table } from "@chakra-ui/react";
+import TableContainer from "../ReusableItems/TableContainer";
 
 function ProductivitySplit() {
+  const columns = [
+    { key: "name", label: "Name" },
+    { key: "mandays", label: "Man Days" },
+    { key: "avgworkhours", label: "Work Hours (Avg)" },
+    { key: "new", label: "new Hours (Avg)" },
+  ];
+
+  // Data
+  const items = [
+    { id: 1, name: "Chandrakanta Malviya", mandays: "1", avgworkhours: "05:05" ,new:0},
+    { id: 2, name: "Rahul Sharma", mandays: "2", avgworkhours: "06:30" ,new:9},
+  ];
   return (
     <div>
       <Card.Root>
                   <Card.Body gap="2">
-                      <Card.Title mt="2">Nue Camp</Card.Title>
+                      <Card.Title mt="2">Productivity Split</Card.Title>
                       <Card.Description>
-                      This is the card body. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Curabitur nec odio vel dui euismod fermentum.
-                      Curabitur nec odio vel dui euismod fermentum.
+                      <TableContainer columns={columns} items={items}/>
                       </Card.Description>
                   </Card.Body>
               </Card.Root>

@@ -7,13 +7,13 @@ import MainContentRight from './MainContentRight'
 
 function Maincontent() {
   return (
-    <div style={{width:"85%"}}>
+    <div style={{width:"85%", padding: "16px"}}>
       
      <Flex gap={"10px"} w={"100%"}>
-        <div style={{width:"20%",border:"1px solid red"}}>
+        <div style={{width:"20%"}}>
             <MainContentLeft/>
         </div>
-        <div style={{width:"80%" ,border:"1px solid green"}}> 
+        <div style={{width:"80%" }}> 
             <MainContentRight/>
         </div>
      </Flex>
